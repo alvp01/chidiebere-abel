@@ -11,6 +11,61 @@
 
 
     <script  src="js/index.js"></script>
-    <h1>Hello World, we are software developers!</h1>
+    <h1 id="title">Survey Form</h1>
+    <p id ="description"> A collaboration between Chidiebere and Abel</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">
+    Name: </label>
+      <input autofocus type="text"
+      name="name" id="name" class="input-field"
+      placeholder="Enter your name" required>
+
+      <label id="email-label" for="email">
+    Email: </label>
+      <input autofocus type="email"
+      name="email" id="email" class="input-field"
+      placeholder="Enter your Email" required>
+
+      <label id="number-label" for="age">
+    Age: </label>
+      <input type="number"
+      name="age" id="number" min="1" max="125" class="input-field" placeholder="Age" >
+    
+      <select id="dropdown"
+      name="CurrentPos" class="dropdown">
+      <option disabeled value> Select an option <option value="">
+      </option>
+
+<li class="radio">
+<label>Definitely<input name="radio-buttons"
+  value="1" type="radio" class="userRatings">
+</label></li>    
+
+<li class="radio">
+    <label>Maybe<input name="radio-buttons"
+      value="2" type="radio" class="userRatings">
+    </label></li> 
+    </select>
+<ul>
+    <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" 
+      class="userRatings"> Front-End by Abel</label>
+       </li>
+
+    <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" 
+        class="userRatings"> Back-End by Chidiebere</label>
+         </li>
+</ul>
+
+<label for="comments">Any Comments or Suggestions?
+
+</label>
+
+<textarea id="comments" class="input-field" style="height:50px; resize:vertical;"
+name="comment" placeholder="Enter your comment here..."></textarea>
+
+<button id="submit"
+type="submit">Submit</button>
+
+    </form>
   </body>
 </html>
